@@ -1,0 +1,48 @@
+.education-section {
+    margin: 40px auto;
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+ h3{
+font-size: 30px;
+text-align: center;
+}
+.education-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    width: 1000px;
+margin: auto;
+}
+
+.education-card {
+    flex: 1 1 calc(45% - 20px); 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+
+}
+
+.education-card:hover {
+    transform: translateY(-5px); 
+}
+
+.education-card h4 {
+    font-size: 20px; 
+    color: #333; 
+}
+
+.education-card .institution {
+    font-size: 16px; 
+    color: #555; 
+}
+
+.education-card .duration {
+    font-size: 14px; 
+    color: #777;
+}
