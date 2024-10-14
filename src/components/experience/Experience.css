@@ -10,7 +10,8 @@
     display: flex; 
     flex-wrap: wrap;
     gap: 20px; 
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px; 
     margin: auto;
 }
 
@@ -53,7 +54,37 @@
     color: #666; 
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .experience-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
 
+@media (max-width: 480px) {
+    .experience-card {
+        flex: 1 1 100%; 
+        padding: 10px; 
+    }
+
+    .experience-card h4 {
+        font-size: 20px; 
+    }
+
+    .company {
+        font-size: 16px; 
+    }
+
+    .date {
+        font-size: 14px; 
+    }
+
+    .experience-card li {
+        font-size: 14px;
+    }
+}
+
+/* Fade-in animation */
 .fade-in {
     animation: fadeIn 0.5s ease-in-out;
 }

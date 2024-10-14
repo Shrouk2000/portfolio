@@ -4,20 +4,18 @@
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.skills-container h3{
-    
+
+.skills-container h3 {
     font-size: 40px;
     text-align: center;
 }
+
 .skills-cards {
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; 
-   width: 1000px;
- margin: auto;
-    
-  
-   
+    max-width: 1000px;
+    margin: auto;
 }
 
 .skill-card {
@@ -28,7 +26,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.2s; 
     text-align: center; 
-   
 }
 
 .skill-card:hover {
@@ -38,4 +35,21 @@
 .skill-card h4 {
     font-size: 18px; 
     color: #333; 
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .skill-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .skill-card {
+        flex: 1 1 100%; 
+    }
+    
+    .skills-container h3 {
+        font-size: 32px; 
+    }
 }

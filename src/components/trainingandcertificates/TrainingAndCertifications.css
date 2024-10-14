@@ -1,5 +1,4 @@
 .training-section {
-    /* max-width: 1000px;  */
     margin: 40px auto;
     padding: 20px; 
     background-color: #ffffff; 
@@ -11,7 +10,8 @@
     display: flex; 
     flex-wrap: wrap; 
     gap: 20px; 
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px; 
     margin: auto;
 }
 
@@ -42,4 +42,26 @@
     margin: 5px 0;
     font-size: 16px;
     color: #666; 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .training-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .training-card {
+        flex: 1 1 100%;
+        padding: 10px; 
+    }
+
+    .training-card h4 {
+        font-size: 20px; 
+    }
+
+    .training-card li {
+        font-size: 14px;
+    }
 }
